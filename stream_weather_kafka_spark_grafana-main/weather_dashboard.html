@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather Dashboard</title>
+    <link rel="stylesheet" href="dashboard_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Real-Time Weather Dashboard</h1>
+            <div class="controls">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="addCityBtn">Add City</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="city-list" id="cityList">
+                <!-- Cities will be added here dynamically -->
+            </section>
+
+            <section class="visualizations">
+                <div class="chart-container">
+                    <h2>Temperature Overview</h2>
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h2>Rainfall Data</h2>
+                    <canvas id="rainfallChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h2>Humidity Levels</h2>
+                    <canvas id="humidityChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h2>Wind Speed</h2>
+                    <canvas id="windChart"></canvas>
+                </div>
+
+                <div class="alerts-section">
+                    <h2>Storm Alerts</h2>
+                    <div id="alertsContainer">
+                        <!-- Alerts will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard_script.js"></script>
+</body>
+
+</html>
